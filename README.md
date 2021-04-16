@@ -1,8 +1,11 @@
 # gentoo
-# These settings were set by the catalyst build script that automatically
-# built this stage.
-# Please consult /usr/share/portage/config/make.conf.example for a more
-# detailed example.
+
+
+These settings were set by the catalyst build script that automatically
+built this stage.
+Please consult /usr/share/portage/config/make.conf.example for a more
+detailed example.
+
 COMMON_FLAGS="-march=skylake -O2 -pipe"
 CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
@@ -19,12 +22,16 @@ INPUT_DEVICES="libinput keyboard mouse synaptics"
 USE="-wayland -kde -GNOME -python_targets_python2_7 python_targets_python3_7 dbus pulseaudio X"
 VIDEO_CARDS="intel i915 i965 iris"
 LLVM_TARGETS="X86"
-# NOTE: This stage was built with the bindist Use flag enabled
+
+NOTE: This stage was built with the bindist Use flag enabled
+
 PORTDIR="/var/db/repos/gentoo"
 DISTDIR="/var/cache/distfiles"
 PKGDIR="/var/cache/binpkgs"
-# This sets the language of build output to English.
-# Please keep this setting intact when reporting bugs.
+
+This sets the language of build output to English.
+Please keep this setting intact when reporting bugs.
+
 LC_MESSAGES=C
 
 
