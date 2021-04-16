@@ -7,9 +7,13 @@ Please consult /usr/share/portage/config/make.conf.example for a more
 detailed example.
 
 COMMON_FLAGS="-march=skylake -O2 -pipe"
+
 CFLAGS="${COMMON_FLAGS}"
+
 CXXFLAGS="${COMMON_FLAGS}"
+
 FCFLAGS="${COMMON_FLAGS}"
+
 FFLAGS="${COMMON_FLAGS}"
 
 MAKEOPTS="-j8 -l8"
